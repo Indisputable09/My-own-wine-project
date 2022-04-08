@@ -1,0 +1,23 @@
+.hero-list {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 583px;
+    padding-bottom: 150px;
+}
+.hero-list__item:first-child {
+    margin-right: 30px;
+}
+.hero-list__button {
+    background-color: $btn-footer-bgcolor;
+    color: $primary-text-color;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    
+    // height: 50px;
+    padding: 15px 30px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}

@@ -12,140 +12,184 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />   
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">       
 </head>
 <body>  
         <!-- HEADER -->
-        <header>
-            <div class="container"></div>
-                <ul>
-                    <li>
-                        <address>
-                            <a href="https://goo.gl/maps/tmX9m46WSvuzuFnd6">Тираспольская 58</a>
-                        </address>
-                    </li>
-                    <li>
-                        <a href="tel:+380507393940">+38 050 739 39 40</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>Каталог</li>
-                    <li>Доставка</li>
-                    <li>Коллекции</li>
-                    <li>Контакты</li>
-                </ul>
-            </div>
-        </header>
-        <main>
-            <!-- SECTION--1 -->
-            <section>
-                <ul>
-                    <li><button type="button">винная карта</button></li>
-                    <li><button type="button">дегустация</button></li>
-                </ul>
-            </section>
+        <div class="together">
+            <header class="header">
+                <div class="container header__container">
+                    <ul class="header-contacts__list">
+                        <li class="header-contacts__address">
+                            <address>
+                                <a class="header-contacts__link" href="https://goo.gl/maps/tmX9m46WSvuzuFnd6">Тираспольская 58</a>
+                            </address>
+                        </li>
+                        <li class="header-contacts__tel">
+                            <a class="header-contacts__link" href="tel:+380507393940">+38 050 739 39 40</a>
+                        </li>
+                    </ul>
+                    <nav class="header-nav">
+                        <ul class="header-nav__list">
+                            <li class="header-nav__item">
+                                <a class="header-nav__link" href="">Каталог</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a class="header-nav__link" href="">Доставка</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a class="header-nav__link" href="">Коллекции</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a class="header-nav__link header-nav__link--noborder-end" href="">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main>
+                <!-- SECTION--1 -->
+                <section class="hero">
+                    <div class="container">
+                        <ul class="hero-list">
+                            <li class="hero-list__item"><button class="hero-list__button" type="button">винная карта</button></li>
+                            <li class="hero-list__item"><button class="hero-list__button" type="button">дегустация</button></li>
+                        </ul>
+                    </div>
+                </section>
+        </div>
             <!-- SECTION--2 -->
-            <section>
-                <h2>Лучший вкус, это вкус долголетнего вина</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing.
-                    Pellentesque nisi, mi sit non sit sed fermentum. Felis adipiscing morbi sodales ac. Mauris dictumst risus
-                    pulvinar
-                    blandit elit. Vestibulum quam ultrices nascetur et viverra suscipit. Proin vitae aliquet leo aliquam amet
-                    rutrum. Lectus
-                    auctor purus ultrices enim ultrices. Augue fringilla tellus tortor orci ultrices sed. Viverra cras sapien,
-                    pellentesque
-                    viverra malesuada. Tellus dolor, eget vitae dignissim molestie eget sit duis. Vitae dui vel pretium euismod
-                    diam.
-                    Pellentesque amet, lacus, amet, quis risus. Pellentesque scelerisque nunc, orci aliquam quis.
-                </p>
-                <svg>
-                    <use href=""></use>
-                </svg>
+            <section class="description">
+                <div class="container description__container">
+                    <h2 class="description__title">Лучший вкус, это вкус долголетнего вина</h2>
+                    <p class="description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing.
+                        Pellentesque nisi, mi sit non sit sed fermentum. Felis adipiscing morbi sodales ac. Mauris dictumst risus
+                        pulvinar
+                        blandit elit. Vestibulum quam ultrices nascetur et viverra suscipit. Proin vitae aliquet leo aliquam amet
+                        rutrum. Lectus
+                        auctor purus ultrices enim ultrices. Augue fringilla tellus tortor orci ultrices sed. Viverra cras sapien,
+                        pellentesque
+                        viverra malesuada. Tellus dolor, eget vitae dignissim molestie eget sit duis. Vitae dui vel pretium euismod
+                        diam.
+                        Pellentesque amet, lacus, amet, quis risus. Pellentesque scelerisque nunc, orci aliquam quis.
+                    </p>
+                </div>
             </section>
             <!-- SECTION--3 -->
-            <section>
-                <p>Новинки коллекций</p>
-                <h2>Март 1980
-                    Урожай Марселя</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing.
-                    Pellentesque nisi, mi sit non sit sed fermentum. Felis adipiscing morbi sodales ac.</p>
-                <table>
-                    <tr>
-                        <td>1980</td>
-                        <td>
-                            <h3>Colli Euganei Bianco Ca' Lustra 1980</h3>
-                            <p>Красочная бутылка вина из Марселя</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1980</td>
-                        <td>
-                            <h3>Colli Euganei Bianco Ca' Lustra 1980</h3>
-                            <p>Красочная бутылка вина из Марселя</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1980</td>
-                        <td>
-                            <h3>Colli Euganei Bianco Ca' Lustra 1980</h3>
-                            <p>Красочная бутылка вина из Марселя</p>
-                        </td>
-                    </tr>
-                </table>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing.
-                    Pellentesque nisi, mi sit non sit sed fermentum. Felis adipiscing morbi sodales ac.</p>
-                <button type="button">узнать подробнее</button>
-                <img src="./images/Rectangle 11.jpg" alt="Бокал вина" width="540" height="500">
-                <img src="./images/Rectangle 13.jpg" alt="Бутылки вина" width="225" height="228">
-                <img src="./images/Rectangle 12.jpg" alt="Бутылки вина" width="225" height="228">
+            <section class="prepositions">
+                <div class="container">
+                    <div class="prepositions-container">
+                        <div class="prepositions-content">
+                            <p class="prepositions-content__pre-title">Новинки коллекций</p>
+                            <h2 class="prepositions-content__title">Март 1980 Урожай Марселя</h2>
+                            <p class="prepositions-content__post-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing.
+                                Pellentesque nisi, mi sit non sit sed fermentum. Felis adipiscing morbi sodales ac.</p>
+                            <table class="prepositions-content__table">
+                                <tbody>
+                                    <tr>
+                                        <td class="prepositions-content__table-date prepositions-content__table-date--top prepositions-content__element">
+                                            1980</td>
+                                        <td class="prepositions-content__element">
+                                            <h3 class="prepositions-content__table-title prepositions-content__table-title--top">Colli Euganei Bianco Ca'
+                                                Lustra 1980</h3>
+                                            <p class="prepositions-content__table-text">Красочная бутылка вина из Марселя</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="prepositions-content__table-date prepositions-content__element">1980</td>
+                                        <td class="prepositions-content__element">
+                                            <h3 class="prepositions-content__table-title">Colli Euganei Bianco Ca' Lustra 1980</h3>
+                                            <p class="prepositions-content__table-text">Красочная бутылка вина из Марселя</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="prepositions-content__table-date prepositions-content__table-date--bottom prepositions-content__element prepositions-content__element--noborder">
+                                            1980</td>
+                                        <td class="prepositions-content__element prepositions-content__element--noborder">
+                                            <h3 class="prepositions-content__table-title">Colli Euganei Bianco Ca' Lustra 1980</h3>
+                                            <p class="prepositions-content__table-text prepositions-content__table-text--bottom">Красочная бутылка вина из
+                                                Марселя</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="prepositions-content__pre-button">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing.
+                                Pellentesque nisi, mi sit non sit sed fermentum. Felis adipiscing morbi sodales ac.</p>
+                            <button class="prepositions-content__button" type="button">узнать подробнее</button>
+                        </div>
+                        <div class="prepositions-images">
+                            <img class="prepositions-images__space" src="./images/Rectangle 11.jpg" alt="Бокал вина" width="540" height="500">
+                            <div class="prepositions-images__flex">
+                                <img class="prepositions-images__position" src="./images/Rectangle 13.jpg" alt="Бутылки вина" width="255">
+                                <img src="./images/Rectangle 12.jpg" alt="Бутылки вина" width="255">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <!-- SECTION--4 -->
-            <section>
-                <form action="">
-                    <fieldset>
-                        <legend>Запись на дегустацию</legend>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet
-                            adipiscing.
-                            Pellentesque nisi, mi sit non sit sed fermentum.</p>
-                        <label>
-                            <input type="text" name="name">
-                        </label>
-                        <label>
-                            <input type="phone" name="phone">
-                        </label>
-                        <label>
-                            <input type="address" name="address">
-                        </label>
-                        <button type="submit">записаться</button>
-                    </fieldset>
-                </form>
+            <section class="check-in">
+                <div class="container check-in-container">
+                    <form action="">
+                        <fieldset class="check-in__window">
+                            <legend class="check-in__title">
+                                Запись на дегустацию
+                            </legend>
+                            <p class="check-in__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet
+                                adipiscing.
+                                Pellentesque nisi, mi sit non sit sed fermentum.</p>
+                            <div class="check-in__name">
+                                <div class="check-in__box">
+                                    <input class="check-in__input-name check-in__transform" type="text" name="name" id="name" placeholder=" " required>
+                                    <label class="check-in__item" for="name">Имя</label>
+                                </div>
+                                <div class="check-in__box">
+                                    <input class="check-in__input-name check-in__input-name--nospace check-in__transform" type="phone" name="phone" id="phone" placeholder=" " required>
+                                    <label class="check-in__item" for="phone">Телефон</label>
+                                </div>
+                            </div>
+                            <div class="check-in__mail-form">
+                                <div class="check-in__box">
+                                    <input class="check-in__input-mail check-in__transform" type="mail" name="mail" id="mail" placeholder=" ">
+                                    <label class="check-in__item" for="mail">mail</label>
+                                </div>
+                            </div>
+                            <button class="check-in__button" type="submit">записаться</button>
+                        </fieldset>
+                    </form>
+                </div>
             </section>
         </main>
-        <footer>
-            <ul>
-                <li><a href="">Главная</a></li>
-                <li><a href="">Каталог</a></li>
-                <li><a href="">Поставщики</a></li>
-                <li><a href="">Коллекции</a></li>
-                <li><a href="">Дегустация</a></li>
-                <li><a href="">Коллекция 2020</a></li>
-                <li><a href="">Контакты</a></li>
-            </ul>
-            <div>
-                <div><a href="">винный бутик LE CORTE</a></div>
-                <div><a href="tel:+380507393940">+38 050 739 39 40</a></div>
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <ul>
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">Каталог</a></li>
+                    <li><a href="">Поставщики</a></li>
+                    <li><a href="">Коллекции</a></li>
+                    <li><a href="">Дегустация</a></li>
+                    <li><a href="">Коллекция 2020</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
                 <div>
-                    <svg>
-                        <use href=""></use>
-                    </svg>
-                    <svg>
-                        <use href=""></use>
-                    </svg>
-                    <svg>
-                        <use href=""></use>
-                    </svg>
+                    <div><a href="">винный бутик LE CORTE</a></div>
+                    <div><a href="tel:+380507393940">+38 050 739 39 40</a></div>
+                    <div>
+                        <svg>
+                            <use href=""></use>
+                        </svg>
+                        <svg>
+                            <use href=""></use>
+                        </svg>
+                        <svg>
+                            <use href=""></use>
+                        </svg>
+                    </div>
+                    <div>&copy;le-corte.ua</div>
                 </div>
-                <div>&copy;le-corte.ua</div>
             </div>
         </footer>
 </body>

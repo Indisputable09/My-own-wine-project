@@ -1,0 +1,481 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, p, table {
+  margin: 0;
+}
+
+.container {
+  width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.together {
+  background-color: #212121;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 40, 40, 0)), to(rgba(40, 40, 40, 0))), url(/images/bg.jpg);
+  background: linear-gradient(180deg, rgba(40, 40, 40, 0), rgba(40, 40, 40, 0)), url(/images/bg.jpg);
+  max-width: 1920px;
+  height: 900px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 150px;
+}
+
+.header__container {
+  width: 1140px;
+}
+
+.header-contacts__list {
+  margin: 0 0 19px 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-contacts__tel {
+  margin-left: auto;
+}
+
+.header-contacts__link {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.53;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.header-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  width: 1140px;
+}
+
+.header-nav__link {
+  display: block;
+  text-align: center;
+  width: calc(1110px/4);
+  padding-top: 13px;
+  padding-bottom: 13px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  border: 1px solid #ffffff;
+  border-left: none;
+}
+
+.header-nav__link--noborder-end {
+  border-right: none;
+}
+
+.hero-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 583px;
+  padding-bottom: 150px;
+}
+
+.hero-list__item:first-child {
+  margin-right: 30px;
+}
+
+.hero-list__button, .prepositions-content__button {
+  background-color: #998431;
+  color: #ffffff;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  padding: 15px 30px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.description {
+  background-color: #282828;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.description__title {
+  font-family: 'Playfair Display';
+  font-size: 36px;
+  line-height: 1.5;
+  color: #ffffff;
+  margin-top: 60px;
+}
+
+.description__title::after {
+  content: '';
+  display: block;
+  width: 160px;
+  height: 1px;
+  background-color: #ffffff;
+  margin: 40px auto;
+}
+
+.description__text {
+  max-width: 733px;
+  margin: 0 auto;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.description__text::after {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 160px;
+  margin: 50px auto 60px;
+  background-image: url(/images/goblet.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.description__container {
+  border: 1px solid white;
+  max-width: 1110px;
+}
+
+.prepositions {
+  background-color: #E6E3C4;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.prepositions-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1110px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  border-bottom: 1px solid #998431;
+  border-top: 1px solid #998431;
+}
+
+.prepositions-content {
+  color: #282828;
+  margin-right: 125px;
+}
+
+.prepositions-content__pre-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.prepositions-content__title {
+  font-family: 'Playfair Display';
+  max-width: 298px;
+  font-size: 36px;
+  line-height: 1.5;
+}
+
+.prepositions-content__title::after {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 1px;
+  background-color: #282828;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.prepositions-content__post-title, .prepositions-content__pre-button {
+  max-width: 445px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.prepositions-content__table {
+  margin-bottom: 30px;
+  border-collapse: collapse;
+}
+
+.prepositions-content__element {
+  border-bottom: 1px solid #282828;
+}
+
+.prepositions-content__element--noborder {
+  border-bottom: none;
+}
+
+.prepositions-content__table-date {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  padding-top: 31px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 26px;
+  border-right: 1px solid #282828;
+}
+
+.prepositions-content__table-date--top {
+  padding-top: 26px;
+}
+
+.prepositions-content__table-date--bottom {
+  padding-bottom: 25px;
+}
+
+.prepositions-content__table-title {
+  font-family: 'Playfair Display';
+  font-size: 18px;
+  line-height: 1.5;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+.prepositions-content__table-title--top {
+  padding-top: 5px;
+}
+
+.prepositions-content__table-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  padding-bottom: 15px;
+  padding-left: 30px;
+}
+
+.prepositions-content__table-text--bottom {
+  padding-bottom: 14px;
+}
+
+.prepositions-images__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.prepositions-images {
+  display: -ms-grid;
+  display: grid;
+}
+
+.prepositions-images__position {
+  margin-right: 30px;
+}
+
+.prepositions-images__space {
+  margin-bottom: 30px;
+}
+
+.check-in {
+  background-color: #282828;
+  color: #ffffff;
+}
+
+.check-in-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.check-in__window {
+  position: relative;
+}
+
+.check-in__window::before {
+  content: "";
+  display: block;
+  width: 260px;
+  height: 260px;
+  background-image: url(/images/cluster.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -94px;
+  left: -30px;
+}
+
+.check-in__window::after {
+  content: "";
+  display: block;
+  width: 260px;
+  height: 200px;
+  background-image: url(/images/barrel.png);
+  position: absolute;
+  top: -90px;
+  right: -53px;
+}
+
+.check-in__title {
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: 'Playfair Display';
+  font-size: 36px;
+  line-height: 1.5;
+}
+
+.check-in__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 81px;
+  text-align: center;
+  max-width: 539px;
+}
+
+.check-in__text::before {
+  content: "";
+  background-color: #fff;
+  display: block;
+  width: 118px;
+  height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.check-in__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+}
+
+.check-in__box {
+  position: relative;
+}
+
+.check-in__box:focus-within .check-in__item {
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+  color: #998431;
+}
+
+.check-in__transform:not(:placeholder-shown) + .check-in__item {
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+  color: #998431;
+}
+
+.check-in__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  -webkit-transition: color 500ms, -webkit-transform 250ms;
+  transition: color 500ms, -webkit-transform 250ms;
+  transition: transform 250ms, color 500ms;
+  transition: transform 250ms, color 500ms, -webkit-transform 250ms;
+}
+
+.check-in__input-name {
+  color: #ffffff;
+  background-color: inherit;
+  outline: 0;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  margin-right: 30px;
+  width: 255px;
+}
+
+.check-in__input-name--nospace {
+  margin-right: 0;
+}
+
+.check-in__mail-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 60px;
+}
+
+.check-in__input-mail {
+  color: #ffffff;
+  background-color: #282828;
+  outline: 0;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  width: 540px;
+}
+
+.check-in__button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 90px;
+  width: 540px;
+  height: 45px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(20/16);
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: inherit;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.footer {
+  background-color: #998431;
+}
+/*# sourceMappingURL=main.css.map */
