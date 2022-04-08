@@ -477,5 +477,71 @@ h1, h2, h3, h4, h5, h6, p, table {
 
 .footer {
   background-color: #998431;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 95px;
+  padding-right: 95px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #ffffff;
+}
+
+.footer-nav__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  padding-left: 95px;
+  padding-right: 95px;
+}
+
+.footer-list__link, .footer-list__copy {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer-list__icon {
+  width: 26px;
+  height: 26px;
+  margin-right: 35px;
+}
+
+.footer-list__icon:last-child {
+  margin-right: 0;
+}
+
+.footer-list__icon-vk {
+  width: 24px;
+  height: 24px;
 }
 /*# sourceMappingURL=main.css.map */
