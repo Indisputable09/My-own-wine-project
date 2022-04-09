@@ -315,4 +315,13 @@ color: #998431;
     background-color: inherit;
     color: $primary-text-color;
     border: 1px solid #ffffff;
+
+    transform: scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover, &:focus {
+            color: #998431;
+        } 
+        &:active {
+            transform: scale(0.9);
+        }
 }
