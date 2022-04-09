@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6, p, table {
   margin: 0 auto;
 }
 
-.together {
+.header {
   background-color: #212121;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 40, 40, 0)), to(rgba(40, 40, 40, 0))), url(/images/bg.jpg);
   background: linear-gradient(180deg, rgba(40, 40, 40, 0), rgba(40, 40, 40, 0)), url(/images/bg.jpg);
@@ -103,7 +103,7 @@ h1, h2, h3, h4, h5, h6, p, table {
   border-right: none;
 }
 
-.hero-list {
+.header-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,11 +114,11 @@ h1, h2, h3, h4, h5, h6, p, table {
   padding-bottom: 150px;
 }
 
-.hero-list__item:first-child {
+.header-buttons__item:first-child {
   margin-right: 30px;
 }
 
-.hero-list__button, .prepositions-content__button {
+.header-buttons__button, .prepositions-content__button {
   background-color: #998431;
   color: #ffffff;
   border: none;

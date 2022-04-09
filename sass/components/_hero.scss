@@ -1,14 +1,14 @@
-.hero-list {
+.header-buttons {
     display: flex;
     justify-content: center;
 
     padding-top: 583px;
     padding-bottom: 150px;
 }
-.hero-list__item:first-child {
+.header-buttons__item:first-child {
     margin-right: 30px;
 }
-.hero-list__button {
+.header-buttons__button {
     background-color: $btn-footer-bgcolor;
     color: $primary-text-color;
     border: none;
