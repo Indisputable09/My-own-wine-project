@@ -528,20 +528,29 @@ h1, h2, h3, h4, h5, h6, p, table {
   padding-top: 20px;
   padding-bottom: 20px;
   text-transform: uppercase;
+  border-right: 1px solid #ffffff;
+  padding-right: 55px;
+}
+
+.footer-list__copy {
+  padding-right: 0;
+  border-right: none;
+  border-left: 1px solid #ffffff;
+  padding-left: 55px;
 }
 
 .footer-list__icon {
   width: 26px;
   height: 26px;
-  margin-right: 35px;
 }
 
-.footer-list__icon:last-child {
-  margin-right: 0;
+.footer-list__icon:first-child {
+  margin-right: 35px;
 }
 
 .footer-list__icon-vk {
   width: 24px;
   height: 24px;
+  margin-right: 42px;
 }
 /*# sourceMappingURL=main.css.map */
