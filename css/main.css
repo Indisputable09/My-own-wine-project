@@ -93,7 +93,8 @@ h1, h2, h3, h4, h5, h6, p, table {
 }
 
 .header-nav__link {
-  display: block;
+  position: relative;
+  display: inline-block;
   text-align: center;
   width: calc(1110px/4);
   padding-top: 13px;
@@ -110,6 +111,29 @@ h1, h2, h3, h4, h5, h6, p, table {
 
 .header-nav__link:hover, .header-nav__link:focus {
   color: #998431;
+}
+
+.header-nav__link::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  content: "";
+  background-color: #998431;
+  width: 50%;
+  height: 4px;
+  border-radius: 4px;
+  -webkit-transform: translateX(-50%) scaleX(0);
+          transform: translateX(-50%) scaleX(0);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-nav__link:hover::after {
+  -webkit-transform: translateX(-50%) scaleX(1);
+          transform: translateX(-50%) scaleX(1);
 }
 
 .header-nav__link--noborder-end {
