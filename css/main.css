@@ -496,6 +496,20 @@ h1, h2, h3, h4, h5, h6, p, table {
   border-bottom: 1px solid #ffffff;
   margin-right: 30px;
   width: 255px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+.check-in__input-name:-webkit-autofill, .check-in__input-name:-webkit-autofill:hover, .check-in__input-name:-webkit-autofill:focus, .check-in__input-name:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+          box-shadow: 0 0 0px 1000px transparent inset;
+  -webkit-text-fill-color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.25;
 }
 
 .check-in__input-name--nospace {
@@ -519,6 +533,20 @@ h1, h2, h3, h4, h5, h6, p, table {
   border: none;
   border-bottom: 1px solid #ffffff;
   width: 540px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+.check-in__input-mail:-webkit-autofill, .check-in__input-mail:-webkit-autofill:hover, .check-in__input-mail:-webkit-autofill:focus, .check-in__input-mail:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+          box-shadow: 0 0 0px 1000px transparent inset;
+  -webkit-text-fill-color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.25;
 }
 
 .check-in__button {
@@ -552,6 +580,77 @@ h1, h2, h3, h4, h5, h6, p, table {
 .check-in__button:active {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+}
+
+.pulsate {
+  position: relative;
+  z-index: 10;
+  background-color: #998431;
+}
+
+.pulsate span {
+  position: relative;
+  z-index: 10;
+}
+
+.pulsate::after,
+.pulsate::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background-color: #998431;
+}
+
+.pulsate::after {
+  -webkit-animation: pulsation 4s 400ms ease-in-out infinite both;
+          animation: pulsation 4s 400ms ease-in-out infinite both;
+}
+
+.pulsate::before {
+  -webkit-animation: pulsation 4s ease-in-out infinite both;
+          animation: pulsation 4s ease-in-out infinite both;
+}
+
+@-webkit-keyframes pulsation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(0.4);
+            transform: translate(-50%, -50%) scale(0.4);
+    opacity: 0.8;
+  }
+  80% {
+    -webkit-transform: translate(-50%, -50%) scale(1.4);
+            transform: translate(-50%, -50%) scale(1.4);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(2.4);
+            transform: translate(-50%, -50%) scale(2.4);
+    opacity: 0;
+  }
+}
+
+@keyframes pulsation {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(0.4);
+            transform: translate(-50%, -50%) scale(0.4);
+    opacity: 0.8;
+  }
+  80% {
+    -webkit-transform: translate(-50%, -50%) scale(1.4);
+            transform: translate(-50%, -50%) scale(1.4);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(2.4);
+            transform: translate(-50%, -50%) scale(2.4);
+    opacity: 0;
+  }
 }
 
 .footer {
