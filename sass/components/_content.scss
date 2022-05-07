@@ -40,7 +40,7 @@
             height: 160px;
             margin: 50px auto 60px;
 
-            background-image: url(/images/goblet.png);
+            background-image: url('../images/goblet.png');
             background-size: cover;
             background-repeat: no-repeat;
 
@@ -187,7 +187,7 @@ max-width: 1110px;
         display: block;
         width: 260px;
         height: 260px;
-        background-image: url(/images/cluster.png);
+        background-image: url('../images/cluster.png');
         background-size: cover;
         background-repeat: no-repeat;
         position: absolute;
@@ -199,7 +199,7 @@ max-width: 1110px;
         display: block;
         width: 260px;
         height: 200px;
-        background-image: url(/images/barrel.png);
+        background-image: url('../images/barrel.png');
         position: absolute;
         top: -90px;
         right: -53px;
